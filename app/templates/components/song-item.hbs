@@ -1,0 +1,20 @@
+{{song.title}}
+
+<ul>
+  <li>
+    {{#if isExpensive}}
+      $${{song.price}}
+    {{else}}
+      ${{song.price}}
+    {{/if}}
+  </li>
+
+  <li>
+    {{#if isPopular}}
+      Play Count: {{song.playCount}}
+      <img src="http://carseatblog.com/wp-content/uploads/2013/12/most-popular-icon.png" alt="">
+    {{else}}
+      Play Count: {{song.playCount}}
+    {{/if}}
+  </li>
+</ul>
